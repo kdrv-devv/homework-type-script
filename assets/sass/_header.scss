@@ -1,0 +1,231 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  backdrop-filter: blur(20px);
+}
+
+.header > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 39px;
+  .border {
+    border-left: 1px solid rgba(128, 128, 128, 0.614);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    color: #4d5561;
+    padding-left: 30px;
+  }
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  select {
+    border: none;
+    outline: none;
+    font-weight: 400;
+    font-size: 17px;
+    color: #384450;
+    background-color: transparent;
+  }
+  a {
+    font-weight: 400;
+    font-size: 17px;
+    color: #384450;
+    sup {
+      width: 30px;
+      height: 17px;
+      background: #30b5df;
+      display: inline-block;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      border-radius: 8px;
+
+      font-weight: 600;
+      font-size: 11px;
+      text-transform: uppercase;
+      text-align: center;
+      color: #fafafa;
+    }
+  }
+}
+
+#bars{
+    font-size: 23px;
+    color: #384450;
+    display: none;
+    background-color: transparent;
+}
+
+.bars-div{
+    position: fixed;
+    top: 70px;
+    left: -100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+
+      select {
+    border: none;
+    outline: none;
+    font-weight: 400;
+    font-size: 17px;
+    color: #384450;
+  }
+
+
+  a {
+    font-weight: 400;
+    font-size: 17px;
+    color: #384450;
+    sup {
+      width: 30px;
+      height: 17px;
+      background: #30b5df;
+      display: inline-block;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      border-radius: 8px;
+
+      font-weight: 600;
+      font-size: 11px;
+      text-transform: uppercase;
+      text-align: center;
+      color: #fafafa;
+    }
+  }
+
+}
+
+.bars-div *{
+    display: none;
+}
+
+
+
+
+@media(max-width:1250px){
+    .header-right {
+        display: flex;
+        align-items: center;
+        gap: 26px;
+        select {
+          border: none;
+          outline: none;
+          font-weight: 400;
+          font-size: 15px;
+          color: #384450;
+        }
+        a {
+          font-weight: 400;
+          font-size: 15px;
+          color: #384450;
+          sup {
+            width: 30px;
+            height: 17px;
+            background: #30b5df;
+            display: inline-block;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border-radius: 8px;
+      
+            font-weight: 600;
+            font-size: 11px;
+            text-transform: uppercase;
+            text-align: center;
+            color: #fafafa;
+          }
+        }
+      }
+
+      .header-right :nth-child(2){
+        display: none;
+      }
+      .header-right :nth-child(3){
+        display: none;
+      }
+      #bars{
+        display: block;
+      }
+
+      .bars-div :nth-child(2){
+        display: block;
+      }
+      
+      .bars-div :nth-child(3){
+        display: block;
+      }
+
+
+
+}
+
+@media(max-width:927px){
+    .header-right :nth-child(4){
+        display: none;
+      }
+      .header-right :nth-child(5){
+        display: none;
+      }
+
+      .bars-div :nth-child(4){
+        display: block;
+      }
+      
+      .bars-div :nth-child(5){
+        display: block;
+      }
+
+
+}
+
+@media(max-width:701px){
+    .header-left{
+        img{
+            width: 80%;
+        }
+        .border{
+            display: none;
+        }
+    }
+
+    .bars-div{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media(max-width:432px){
+    .header-right :nth-child(1){
+        display: none;
+      }
+      .header-right :nth-child(7){
+        display: none;
+      }
+      
+      .bars-div :nth-child(1){
+        display: block;
+      }
+      
+      .bars-div :nth-child(7){
+        display: block;
+      }
+      .bars-div :nth-child(8){
+        display: block;
+      }
+
+}

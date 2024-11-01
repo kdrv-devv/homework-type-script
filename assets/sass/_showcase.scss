@@ -1,0 +1,138 @@
+.showcase {
+  margin-top: 70px;
+  background: url("../img/showcase-bg-img.png");
+  background-position: 70% center; /* rasmni biroz o'ng tomonga suradi */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.showcase > div {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 0;
+}
+.showcase-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  h5 {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 130%;
+    color: #6b7680;
+  }
+  h2 {
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 100%;
+    letter-spacing: -0.01em;
+    background: linear-gradient(164deg, #30b5df 0%, #0692b5 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  h6 {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 130%;
+    color: #111c27;
+    opacity: 0.8;
+  }
+  .showcase-left-btns {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .kok {
+      border-radius: 8px;
+      padding: 18px 24px;
+      width: 226px;
+      height: 47px;
+      background: #30b5df;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 130%;
+      color: #fff;
+      transition: 0.3s;
+      &:hover {
+        border: 2px solid #30b5df;
+        background-color: #fff;
+        color: #30b5df;
+      }
+    }
+    .green {
+      border-radius: 8px;
+      padding: 18px 24px;
+      width: 250px;
+      height: 47px;
+      background: #25d366;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 130%;
+      color: #fff;
+      transition: 0.3s;
+      &:hover {
+        border: 2px solid #25d366;
+        background-color: #fff;
+        color: #25d366;
+      }
+    }
+  }
+
+  .locations {
+    display: flex;
+    gap: 16px;
+    a {
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 150%;
+      color: #111827;
+      span {
+        color: #0692b5;
+      }
+    }
+  }
+}
+
+.showcase-right {
+  display: flex;
+  align-items: end;
+  .showcase-right-btns {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    .zoon {
+      border: 0.36px solid #d1d5db;
+      border-radius: 9px;
+      padding: 23px 15px;
+      width: 105px;
+      height: 62px;
+      display: flex;
+      cursor: pointer;
+      align-items: center;
+      justify-content: center;
+      backdrop-filter: blur(20px);
+      background: rgba(255, 255, 255, 0.5);
+      &:hover{
+        box-shadow: 0 0 15px #beb7b7;
+      }
+      .news-btn{
+        position: absolute;
+        top: -10px;
+        right:0px;
+      }
+      h3{
+        color: #513dac;
+        font-weight: 600;
+        font-size: 19px;
+      }
+    }
+  
+
+  }
+}
